@@ -1,6 +1,5 @@
 package _1_MementoPattern;
 
-import javax.xml.crypto.Data;
 
 public class TransactionManager {
     private DatabaseMomento backup;

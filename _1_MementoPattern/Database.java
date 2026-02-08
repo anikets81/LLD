@@ -36,11 +36,11 @@ public class Database {
 
         DatabaseMomento createMomento(){
             System.out.println("Creating Memento for Database");
-            return new DatabaseMomento(records);
+            return new DatabaseMomento(new HashMap<>(records));
         }
 
         void restoreFromMomento(DatabaseMomento momento){
-            this.records = momento.getState();
+            this.records = new HashMap<>(momento.getState());
             System.out.println("Restored Database from Memento");
         }
 
